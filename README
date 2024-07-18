@@ -1,0 +1,9 @@
+python ocr-server.py
+
+ngrok http 5001
+
+https://dashboard.ngrok.com/
+
+ssh -p 443 -R0:localhost:5001 -L4300:localhost:4300 qr@a.pinggy.io
+
+lt --port 5001
